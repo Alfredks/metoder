@@ -48,14 +48,14 @@ static void Main(string[] args)
         }
         static double CirkelOmkrets (double radie)
         {
-            return (radie * radie * Math.PI * 2);
+            return (radie * Math.PI * 2);
         }
         static void Main(string[] args)
         {
             Console.WriteLine("mata in ett tal");
             double radie = double.Parse(Console.ReadLine());
-            Console.WriteLine("cirkels area : " + Math.Round(CirkelArea(radie)));
-            Console.WriteLine("cirkels area : " + Math.Round(CirkelOmkrets(radie)));
+            Console.WriteLine("cirkels area : " + Math.Round(CirkelArea(radie),2));
+            Console.WriteLine("cirkels area : " + Math.Round(CirkelOmkrets(radie),2));
         
              }
         }
